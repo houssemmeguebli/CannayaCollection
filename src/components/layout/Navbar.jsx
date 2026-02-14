@@ -33,7 +33,7 @@ export const Navbar = ({ products = [], onProductSelect, onContactClick, onCartC
             
             <div className="flex-1 flex justify-start">
               <a href="/" className="flex items-center">
-                <img src="/src/assets/images/logo.png" alt="Cannaya Collection" className="h-14 md:h-16 w-auto object-contain" />
+                <img src="/logo.png" alt="Cannaya Collection" className="h-14 md:h-16 w-auto object-contain" />
               </a>
             </div>
 

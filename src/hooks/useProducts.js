@@ -18,9 +18,9 @@ export const useProducts = (filters = {}) => {
             price: 149,
             salePrice: null,
             images: [
-              '/src/assets/images/0583ef60ce72ac85d8a97573ee727fdf.jpg',
-              '/src/assets/images/0f005502050eb4a2e37b907fbead8266.jpg',
-              '/src/assets/images/16fb07f733d86f53ecadd1a09e4c8d61.jpg'
+              '/0583ef60ce72ac85d8a97573ee727fdf.jpg',
+              '/images/0f005502050eb4a2e37b907fbead8266.jpg',
+              '/16fb07f733d86f53ecadd1a09e4c8d61.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L', 'XL'],
@@ -34,9 +34,9 @@ export const useProducts = (filters = {}) => {
             price: 89,
             salePrice: 69,
             images: [
-              '/src/assets/images/5188965c6678b083a44e836a2fb6b344.jpg',
-              '/src/assets/images/5a359bef206b8ab21ddeb7d1ac8ee35f.jpg',
-              '/src/assets/images/7e680b0f35173876d2c70212c3936a6b.jpg'
+              '/5188965c6678b083a44e836a2fb6b344.jpg',
+              '/5a359bef206b8ab21ddeb7d1ac8ee35f.jpg',
+              '/7e680b0f35173876d2c70212c3936a6b.jpg'
             ],
             category: 'women',
             sizes: ['One Size'],
@@ -50,9 +50,9 @@ export const useProducts = (filters = {}) => {
             price: 199,
             salePrice: null,
             images: [
-              '/src/assets/images/81c7aebe3e362c18f918e0129afddad2.jpg',
-              '/src/assets/images/8fb6ae1935d16ba94be168bfbc6dc289.jpg',
-              '/src/assets/images/bef9c8f330c55ab07f77158a57b94509.jpg'
+              '/81c7aebe3e362c18f918e0129afddad2.jpg',
+              '/8fb6ae1935d16ba94be168bfbc6dc289.jpg',
+              '/bef9c8f330c55ab07f77158a57b94509.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L', 'XL'],
@@ -66,9 +66,9 @@ export const useProducts = (filters = {}) => {
             price: 179,
             salePrice: 149,
             images: [
-              '/src/assets/images/c0eca54e180a0c8851561ae880809c84.jpg',
-              '/src/assets/images/c1a6bd7dfe456439bea66adf4e3ff6f6.jpg',
-              '/src/assets/images/cf76d3c0fe9654646d6244e8ca38c90d.jpg'
+              '/c0eca54e180a0c8851561ae880809c84.jpg',
+              '/c1a6bd7dfe456439bea66adf4e3ff6f6.jpg',
+              '/cf76d3c0fe9654646d6244e8ca38c90d.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L'],
@@ -82,9 +82,9 @@ export const useProducts = (filters = {}) => {
             price: 119,
             salePrice: null,
             images: [
-              '/src/assets/images/fa3f9a4ad3dfd29a9c568fa8f92c7efa.jpg',
-              '/src/assets/images/hijab-a-enfiler-crepe-et-mousseline.jpg',
-              '/src/assets/images/0583ef60ce72ac85d8a97573ee727fdf.jpg'
+              '/fa3f9a4ad3dfd29a9c568fa8f92c7efa.jpg',
+              '/hijab-a-enfiler-crepe-et-mousseline.jpg',
+              '/0583ef60ce72ac85d8a97573ee727fdf.jpg'
             ],
             category: 'women',
             sizes: ['One Size'],
@@ -98,9 +98,9 @@ export const useProducts = (filters = {}) => {
             price: 229,
             salePrice: 189,
             images: [
-              '/src/assets/images/16fb07f733d86f53ecadd1a09e4c8d61.jpg',
-              '/src/assets/images/5188965c6678b083a44e836a2fb6b344.jpg',
-              '/src/assets/images/7e680b0f35173876d2c70212c3936a6b.jpg'
+              '/16fb07f733d86f53ecadd1a09e4c8d61.jpg',
+              '/5188965c6678b083a44e836a2fb6b344.jpg',
+              '/7e680b0f35173876d2c70212c3936a6b.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L', 'XL'],
@@ -114,9 +114,9 @@ export const useProducts = (filters = {}) => {
             price: 259,
             salePrice: null,
             images: [
-              '/src/assets/images/8fb6ae1935d16ba94be168bfbc6dc289.jpg',
-              '/src/assets/images/bef9c8f330c55ab07f77158a57b94509.jpg',
-              '/src/assets/images/c0eca54e180a0c8851561ae880809c84.jpg'
+              '/8fb6ae1935d16ba94be168bfbc6dc289.jpg',
+              '/bef9c8f330c55ab07f77158a57b94509.jpg',
+              '/c0eca54e180a0c8851561ae880809c84.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L'],
@@ -130,9 +130,9 @@ export const useProducts = (filters = {}) => {
             price: 299,
             salePrice: 249,
             images: [
-              '/src/assets/images/c1a6bd7dfe456439bea66adf4e3ff6f6.jpg',
-              '/src/assets/images/cf76d3c0fe9654646d6244e8ca38c90d.jpg',
-              '/src/assets/images/fa3f9a4ad3dfd29a9c568fa8f92c7efa.jpg'
+              '/c1a6bd7dfe456439bea66adf4e3ff6f6.jpg',
+              '/cf76d3c0fe9654646d6244e8ca38c90d.jpg',
+              '/fa3f9a4ad3dfd29a9c568fa8f92c7efa.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L', 'XL'],
@@ -146,9 +146,9 @@ export const useProducts = (filters = {}) => {
             price: 79,
             salePrice: null,
             images: [
-              '/src/assets/images/0f005502050eb4a2e37b907fbead8266.jpg',
-              '/src/assets/images/5a359bef206b8ab21ddeb7d1ac8ee35f.jpg',
-              '/src/assets/images/81c7aebe3e362c18f918e0129afddad2.jpg'
+              '/0f005502050eb4a2e37b907fbead8266.jpg',
+              '/5a359bef206b8ab21ddeb7d1ac8ee35f.jpg',
+              '/81c7aebe3e362c18f918e0129afddad2.jpg'
             ],
             category: 'women',
             sizes: ['One Size'],
@@ -162,9 +162,9 @@ export const useProducts = (filters = {}) => {
             price: 349,
             salePrice: 299,
             images: [
-              '/src/assets/images/hijab-a-enfiler-crepe-et-mousseline.jpg',
-              '/src/assets/images/0583ef60ce72ac85d8a97573ee727fdf.jpg',
-              '/src/assets/images/16fb07f733d86f53ecadd1a09e4c8d61.jpg'
+              '/hijab-a-enfiler-crepe-et-mousseline.jpg',
+              '/0583ef60ce72ac85d8a97573ee727fdf.jpg',
+              '/16fb07f733d86f53ecadd1a09e4c8d61.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L', 'XL'],
@@ -178,9 +178,9 @@ export const useProducts = (filters = {}) => {
             price: 189,
             salePrice: null,
             images: [
-              '/src/assets/images/5188965c6678b083a44e836a2fb6b344.jpg',
-              '/src/assets/images/8fb6ae1935d16ba94be168bfbc6dc289.jpg',
-              '/src/assets/images/c0eca54e180a0c8851561ae880809c84.jpg'
+              '/5188965c6678b083a44e836a2fb6b344.jpg',
+              '/8fb6ae1935d16ba94be168bfbc6dc289.jpg',
+              '/c0eca54e180a0c8851561ae880809c84.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L'],
@@ -194,9 +194,9 @@ export const useProducts = (filters = {}) => {
             price: 399,
             salePrice: 349,
             images: [
-              '/src/assets/images/7e680b0f35173876d2c70212c3936a6b.jpg',
-              '/src/assets/images/bef9c8f330c55ab07f77158a57b94509.jpg',
-              '/src/assets/images/c1a6bd7dfe456439bea66adf4e3ff6f6.jpg'
+              '/7e680b0f35173876d2c70212c3936a6b.jpg',
+              '/bef9c8f330c55ab07f77158a57b94509.jpg',
+              '/c1a6bd7dfe456439bea66adf4e3ff6f6.jpg'
             ],
             category: 'women',
             sizes: ['S', 'M', 'L', 'XL'],

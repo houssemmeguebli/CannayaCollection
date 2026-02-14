@@ -12,7 +12,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: 'url(/src/assets/images/cover.avif)',
+          backgroundImage: 'url(/cover.avif)',
           filter: 'brightness(0.7)'
         }}
       />
