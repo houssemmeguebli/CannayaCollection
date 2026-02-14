@@ -2,10 +2,20 @@
   position relative
   display flex
   flex-direction column
-  transition transform 0.3s ease
+  transition all 0.4s cubic-bezier(0.4, 0, 0.2, 1)
+  
+  &.hidden
+    opacity 0
+    transform translateY(40px)
+  
+  &.visible
+    opacity 1
+    transform translateY(0)
+    animation fadeInUpScroll 0.6s ease-out forwards
   
   &:hover
-    transform translateY(-4px)
+    transform translateY(-8px)
+    box-shadow 0 20px 40px rgba(0, 0, 0, 0.1)
 
 .imageWrapper
   position relative
@@ -13,15 +23,21 @@
   overflow hidden
   background-color #F5F1EC
   margin-bottom 0.75rem
+  border-radius 4px
+  box-shadow 0 2px 8px rgba(0, 0, 0, 0.05)
+  transition box-shadow 0.3s ease
+  
+  &:hover
+    box-shadow 0 8px 24px rgba(0, 0, 0, 0.12)
   
 .image
   width 100%
   height 100%
   object-fit cover
-  transition transform 0.6s ease
+  transition transform 0.8s cubic-bezier(0.4, 0, 0.2, 1)
   
   .imageWrapper:hover &
-    transform scale(1.05)
+    transform scale(1.08) rotate(1deg)
 
 .badge
   position absolute
@@ -34,23 +50,29 @@
   font-weight 600
   letter-spacing 0.05em
   text-transform uppercase
+  animation slideInLeft 0.5s ease-out
+  box-shadow 0 2px 8px rgba(0, 0, 0, 0.2)
 
 .wishlist
   position absolute
   top 1rem
   right 1rem
-  background-color rgba(255, 255, 255, 0.9)
+  background-color rgba(255, 255, 255, 0.95)
   padding 0.5rem
   border-radius 50%
   opacity 0
-  transition opacity 0.3s ease
+  transform scale(0.8)
+  transition all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
   cursor pointer
+  box-shadow 0 2px 8px rgba(0, 0, 0, 0.1)
   
   &:hover
     background-color #FFFFFF
+    transform scale(1.1)
   
   .imageWrapper:hover &
     opacity 1
+    transform scale(1)
 
 .content
   display flex
@@ -64,22 +86,26 @@
   color #999999
   letter-spacing 0.05em
   text-transform uppercase
+  animation fadeIn 0.6s ease-out 0.2s both
 
 .name
   font-size 0.8rem
   font-weight 500
   color #000000
   text-decoration none
-  transition color 0.2s ease
+  transition all 0.3s ease
   line-height 1.3
+  animation fadeIn 0.6s ease-out 0.3s both
   
   &:hover
     color #D4C5B9
+    transform translateX(2px)
 
 .priceWrapper
   display flex
   align-items center
   gap 0.5rem
+  animation fadeIn 0.6s ease-out 0.4s both
 
 .price
   font-weight 600
@@ -98,6 +124,7 @@
   display flex
   gap 0.5rem
   margin-top 0.25rem
+  animation fadeIn 0.6s ease-out 0.5s both
 
 .colorDot
   width 1rem
@@ -105,7 +132,38 @@
   border-radius 50%
   border 1px solid rgba(0, 0, 0, 0.1)
   cursor pointer
-  transition transform 0.2s ease
+  transition all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
   
   &:hover
-    transform scale(1.2)
+    transform scale(1.3)
+    box-shadow 0 2px 8px rgba(0, 0, 0, 0.2)
+
+@keyframes fadeInUp
+  from
+    opacity 0
+    transform translateY(20px)
+  to
+    opacity 1
+    transform translateY(0)
+
+@keyframes fadeInUpScroll
+  from
+    opacity 0
+    transform translateY(40px) scale(0.95)
+  to
+    opacity 1
+    transform translateY(0) scale(1)
+
+@keyframes fadeIn
+  from
+    opacity 0
+  to
+    opacity 1
+
+@keyframes slideInLeft
+  from
+    opacity 0
+    transform translateX(-10px)
+  to
+    opacity 1
+    transform translateX(0)

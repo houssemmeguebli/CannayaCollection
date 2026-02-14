@@ -1,9 +1,11 @@
 import { useState, useCallback } from 'react'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import styles from './ProductCard.module.styl'
 
-export const ProductCard = ({ product, onClick }) => {
+export const ProductCard = ({ product, onClick, index = 0 }) => {
   const [isHovered, setIsHovered] = useState(false)
   const [isWishlisted, setIsWishlisted] = useState(false)
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.1, once: true })
 
   const handleMouseEnter = useCallback(() => setIsHovered(true), [])
   const handleMouseLeave = useCallback(() => setIsHovered(false), [])
@@ -17,9 +19,13 @@ export const ProductCard = ({ product, onClick }) => {
 
   return (
     <article 
-      className={styles.card}
+      ref={ref}
+      className={`${styles.card} ${isVisible ? styles.visible : styles.hidden}`}
       onClick={onClick}
-      style={{ cursor: 'pointer' }}
+      style={{ 
+        cursor: 'pointer',
+        animationDelay: `${index * 0.1}s`
+      }}
     >
       <div 
         className={styles.imageWrapper}

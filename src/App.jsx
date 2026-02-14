@@ -6,6 +6,7 @@ import { ContactPage } from './pages/ContactPage'
 import { CartPage } from './pages/CartPage'
 import { Footer } from './components/layout/Footer'
 import { FloatingButtons } from './components/ui/FloatingButtons'
+import { SplashScreen } from './components/ui/SplashScreen'
 import { useProducts } from './hooks/useProducts'
 import { useState } from 'react'
 
@@ -14,6 +15,7 @@ export const App = () => {
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [showContact, setShowContact] = useState(false)
   const [showCart, setShowCart] = useState(false)
+  const [showSplash, setShowSplash] = useState(true)
 
   const handleProductSelect = (product) => {
     setSelectedProduct(product)
@@ -34,6 +36,10 @@ export const App = () => {
     setShowContact(false)
     setSelectedProduct(null)
     window.scrollTo(0, 0)
+  }
+
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />
   }
 
   if (showCart) {
